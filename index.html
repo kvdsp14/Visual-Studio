@@ -1,57 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      nav{
+      nav {
         background-color: black;
-        padding : 10px;
+        padding: 10px;
         font-size: 20px;
+        height: 50px;
+        display: flex;
+
+        align-items: center;
       }
-      nav a{
+
+      nav p {
         color: white;
       }
-    </style>
-     
-</head>
-<body>
-    <nav>
-        <a href=""> Company Name </a>
-    </nav>
-    <h1> Heading 1 </h1>
-    <p> The economy of India has transitioned from a mixed planned economy to a mixed middle-income developing social market economy with 
-        notable state participation in strategic sectors.[43] It 
-        is the world's fifth-largest economy by nominal GDP and the third-largest by purchasing power parity (PPP). According to the
-         International Monetary Fund (IMF), on a per capita income basis, India
-          ranked 142nd by GDP (nominal) and 125th by GDP (PPP).[44] From indepen
-          dence in 1947 until 1991, successive governments followed Soviet style planned economy and promoted protectionist economic policies, 
-          with extensive state intervention and economic regulation. This is characterised as dirigism, in the form of the License Raj.[45][46] The end of the 
-          Cold War and an acute balance of payments crisis in 1991 led to the adoption of a broad economic
-           liberalisation in India.[47][48] Since the start of the 21st century, annual average GDP
-           growth has been 6% to 7%.[43] Economy of the Indian subcontinent was the largest in the world for most of the recorded history up until th
-           e onset of colonialism in early 19th century.[49][50][51] India accounte
-           d for 7.2% of global economy in 2022 in PPP terms, and around 3.4% in nominal terms in 2022.[52][53] </p>
-     <a href="https://www.lipsum.com/"><button> Learn more </button></a>
-     <h2> Heading 2 </h2>
-     <img src="https://images.unsplash.com/photo-1566669086984-077347c1f4bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmVhdXRpZnVsJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80" width="500" height="600">
 
-     <h3>ORDERED LIST</h3>
+      .btn {
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+
+      table {
+        /* border: 2px solid; */
+        width: 70%;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 2px solid;
+      }
+
+      #head td {
+        /* color: brown; */
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <p>Company Name</p>
+    </nav>
+
+    <h1>Heading 1</h1>
+
+    <p>
+      The economy of India has transitioned from a mixed planned economy to a
+      mixed middle-income developing social market economy with notable state
+      participation in strategic sectors.[43] It is the world's fifth-largest
+      economy by nominal GDP and the third-largest by purchasing power parity
+      (PPP). According to the International Monetary Fund (IMF), on a per capita
+      income basis, India ranked 142nd by GDP (nominal) and 125th by GDP
+      (PPP).[44] From indepen dence in 1947 until 1991, successive governments
+      followed Soviet style planned economy and promoted protectionist economic
+      policies, with extensive state intervention and economic regulation. This
+      is characterised as dirigism, in the form of the License Raj.[45][46] The
+      end of the Cold War and an acute balance of payments crisis in 1991 led to
+      the adoption of a broad economic liberalisation in India.[47][48] Since
+      the start of the 21st century, annual average GDP growth has been 6% to
+      7%.[43] Economy of the Indian subcontinent was the largest in the world
+      for most of the recorded history up until th e onset of colonialism in
+      early 19th century.[49][50][51] India accounte d for 7.2% of global
+      economy in 2022 in PPP terms, and around 3.4% in nominal terms in
+      2022.[52][53]
+    </p>
+
+    <a href="https://www.lipsum.com/">
+      <button class="btn">Learn more</button>
+    </a>
+
+    <h2>Heading 2</h2>
+    <img
+      src="https://images.unsplash.com/photo-1566669086984-077347c1f4bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmVhdXRpZnVsJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+      width="500"
+      height="600"
+    />
+
+    <h3>ORDERED LIST</h3>
     <ol>
-        <li> list 1</li>
-        <li> list 2</li>
-        <li> list 3</li>
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
     </ol>
     <h3>UNORDERED LIST</h3>
     <ul>
-        <li> ul list 1</li>
-        <li> ul list 2</li>
-        <li> ul list 3</li>
-        <li> ul list 3</li>
-
+      <li>ul list 1</li>
+      <li>ul list 2</li>
+      <li>ul list 3</li>
     </ul>
 
-</body> 
+    <h1>Table</h1>
+
+    <table cellspacing="3" cellpadding="20">
+      <tr id="head">
+        <td>SNO.</td>
+        <td>Startup Name</td>
+        <td>Startup Description</td>
+      </tr>
+
+      <tr>
+        <td>1.</td>
+        <td>Lorem</td>
+        <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Lorem</td>
+        <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Lorem</td>
+        <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>Lorem</td>
+        <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>Lorem</td>
+        <td>Lorem</td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td>Lorem</td>
+        <td>Lorem</td>
+      </tr>
+    </table>
+  </body>
 </html>
